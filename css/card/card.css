@@ -1,0 +1,75 @@
+
+.card {
+    background-image: url('https://i.ibb.co/6RvCYgM/a.jpg'); /* Immagine di sfondo solo per la card */
+    background-size: cover; /* Adatta l'immagine alla dimensione della card */
+    background-border: 20px solid #00064E;
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 60px 120px rgb(255, 255, 0);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.card-image {
+    align-self: flex-start;
+    margin: 5px auto 0; 
+    width: 98%;
+    border: 7px solid #ffffff;
+    border-radius: 5px;
+    }
+
+.card-title {
+    margin-top: 10px;
+    font-size: 30px; /* Dimensione del carattere */
+    color: #ffffff; /* Colore del testo */
+    font-family: fantasy, Serif; /* Tipo di carattere */
+    letter-spacing: 3px; /* Spaziatura tra le lettere */
+    text-shadow: 2px 2px 4px rgba(251, 255, 0, 0.887);
+}
+
+.card-list {
+    padding: 0;
+    margin: 10px 0;
+}
+
+.card-buttons {
+    text-align: center;
+}
+
+.card-button {
+    margin: 0 5px;
+}
+
+.description-box {
+    border: 1px solid #ffff9990;
+    background-color: #ffffff57;
+    border-radius: 5px; 
+    padding: 10px; 
+    margin-top: 5px; 
+    text-align: center;
+}
+
+.description {
+    margin: 0; 
+    line-height: 1; 
+    font-size: 15px; /* Dimensione del carattere */
+    color: #000000; /* Colore del testo */
+    font-family: cursive; /* Tipo di carattere */
+    letter-spacing: 2px; /* Spaziatura tra le lettere */
+    text-shadow: 2px 2px 4px rgba(246, 255, 0, 0.638); /* Ombra del testo */
+}
+
+.button-container {
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+.button {
+    padding: 5px 10px; 
+    background-color: #ffffff57;
+    color: #ffffff86; 
+    border: none; 
+    border-radius: 5px; 
+}
