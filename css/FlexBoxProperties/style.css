@@ -1,0 +1,52 @@
+body {
+  width: 60em;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  padding: 2em;
+  margin: 1em;
+}
+
+
+#green {
+  order: 3;
+  width: 70px;
+  background-color: #8ffda7;
+}
+
+#orange {
+  order: 4;
+  width: 150px;
+  background-color: #ffc788;
+}
+
+#yellow {
+  order: 1;
+  width: 90px;
+  background-color: #ffff92;
+}
+
+#red {
+  order : 2;
+  background-color: #ff919c;
+}
+
+#blue {
+  order: 5;
+  width: 70px;
+  background-color: #98d2ff;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  padding: 1em;
+  display: block;
+  margin: 1em;
+}
