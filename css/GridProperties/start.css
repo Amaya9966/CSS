@@ -1,0 +1,47 @@
+body {
+    width: 800px; /* Larghezza fissa */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra i blocchi orizzontalmente */
+    align-items: center; /* Centra i blocchi verticalmente */
+  }
+  
+  section {
+    padding: 2em;
+    margin: 1em;
+  }
+  
+  #green {
+    background-color: #8ffda7;
+  }
+  
+  #yellow,
+  #red {
+    background-color: #ffff92;
+  }
+  
+  #red {
+    background-color: #ff919c;
+  }
+  
+  #blue {
+    background-color: #98d2ff;
+    
+  }
+  
+  #orange {
+    background-color: #ffc788;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    background-color: white;
+    padding: 1em;
+    display: block;
+    margin: 1em;
+  }
+  

@@ -1,0 +1,56 @@
+body {
+  width: 60em;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Due colonne */
+  grid-template-rows: repeat(4, auto); /* Quattro righe con altezza automatica */
+  gap: 3em; /* Spazio tra le celle */
+}
+
+section {
+  padding: 2em;
+}
+
+#green {
+  background-color: #8ffda7;
+  grid-row: 1; / span 2; /* Occupa due righe */
+  grid-column: 1 /span 7;
+}
+
+#yellow {
+  background-color: #ffff92;
+  grid-column: 1 / span 1; /* Prima colonna */
+  grid-row: 2 / span 1; /* Occupa due righe */
+}
+
+#red {
+  background-color: #ff919c;
+  grid-column: 2 / span 1; /* Seconda colonna */
+  grid-row: 2 / span 1; /* Occupa due righe */
+}
+
+#blue {
+  background-color: #98d2ff;
+  grid-row: 2 / span 2;
+grid-column: 3 /span 5;
+}
+
+#orange {
+  background-color: #ffc788;
+  grid-column: 1 / span 2; /* Occupa due colonne */
+
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  padding: 1em;
+  display: grid;
+  margin: 1em;
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(2);
+}
+
