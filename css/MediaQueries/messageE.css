@@ -1,0 +1,144 @@
+body {
+    background-image: url('eevee.jpg');
+    background-size: cover; /* Imposta l'immagine di sfondo per coprire l'intera area */
+    background-position: center; /* Centra l'immagine di sfondo */
+    background-repeat: no-repeat; /* Impedisce la ripetizione dell'immagine di sfondo */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%; /* Imposta l'altezza di html e body al 100% */
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0; /* Rimuove il padding predefinito */
+}
+
+.page-header, .chat-box {
+    background-color: #C78A51; /* Sfondo traslucido per le navbar */
+    /* Altre regole CSS per la navbar */
+}
+
+.page-header {
+    background-color: #c78a51(15, 16, 17);
+    color: #F2E3BC;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    /* Colore avatar */
+    border-radius: 50%;
+    /* Per creare una forma circolare */
+    overflow: hidden; /* Nasconde l'immagine che potrebbe fuoriuscire dal bordo */
+    position: relative; /* Posizionamento relativo per posizionare l'input sopra l'avatar */
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ridimensiona l'immagine per adattarla al bordo */
+}
+
+.username {
+    font-weight: bold;
+    margin: 0;
+}
+
+.options {
+    cursor: pointer;
+}
+
+/* Stile per l'icona del dropdown */
+.dot-icon {
+    font-size: 18px; /* Dimensione dell'icona */
+    color: #555; /* Colore dell'icona */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+}
+
+/* Stile per il dropdown content */
+.dropdown-content {
+    display: none; /* Imposta la visibilità iniziale su nascosto */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block; /* Mostra il contenuto quando la classe "show" è presente */
+}
+
+
+
+.chat-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #C78A51; /* Colore di sfondo del chat box */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.message-input {
+    display: flex;
+    align-items: center;
+}
+
+.message-input input[type="text"] {
+    flex: 1; /* Il text input si espanderà per riempire lo spazio disponibile */
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.message-input button {
+    padding: 10px 20px;
+    background-color: #FF8614; /* Colore di sfondo del bottone */
+    color: #000000; /* Colore del testo del bottone */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-box {
+    background-color: #f6ff0014;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: calc(100vh - 140px); /* Altezza dinamica */
+    overflow-y: auto; /* Barra di scorrimento verticale */
+}
+
+/* Stile per i messaggi */
+.message {
+    background-color: #DCF8C6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Stile per i messaggi inviati */
+.message.sent {
+    background-color: #e6e6e6;
+    text-align: right;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger</title>
+    <link rel="stylesheet" href="message.css">
+    <!-- Link al file CSS per lo stile -->
+</head>
+<body>
+    <div class="page-header">
+        <div class="avatar">
+            <img src="ball.jpg" alt="Avatar">
+        </div>
+        <div class="user-info">
+            <p class="username">ブラッキー</p>
+        </div>
+        <div class="options">
+            <div class="dropdown">
+                <i class="fas fa-ellipsis-v dot-icon"></i>
+                <div class="dropdown-content">
+                    <a href="#">Aggiungi tra amici</a>
+                    <a href="#">Blocca utente</a>
+                    <a href="#">Visualizza pagina utente</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="message-box">
+        <!-- Box per visualizzare i messaggi -->
+    </div>
+    <div class="chat-container">
+        <!-- Contenitore principale della chat -->
+        <div class="chat">
+            <!-- Area di visualizzazione dei messaggi -->
+            <div class="messages">
+                <!-- Esempi di messaggi ricevuti e inviati -->
+            </div>
+            <div class="message-input">
+                <!-- Form per l'inserimento dei nuovi messaggi -->
+                <input type="text" placeholder="Type a message...">
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Seleziona il pulsante "Send"
+        var sendButton = document.getElementById('sendButton');
+        
+        // Aggiungi un listener per l'evento click sul pulsante "Send"
+        sendButton.addEventListener('click', function() {
+            // Seleziona il campo di input del messaggio
+            var messageInput = document.querySelector('.message-input input');
+            // Ottieni il testo inserito dall'utente
+            var messageText = messageInput.value;
+            // Controlla se il campo di input non è vuoto
+            if (messageText.trim() !== '') {
+                // Crea un nuovo elemento di messaggio
+                var messageElement = document.createElement('div');
+                // Aggiungi la classe del messaggio inviato
+                messageElement.classList.add('message');
+                messageElement.classList.add('sent');
+                // Imposta il testo del messaggio
+                messageElement.textContent = messageText;
+                // Aggiungi il messaggio al message-box
+                var messageBox = document.querySelector('.message-box');
+                messageBox.appendChild(messageElement);
+                // Pulisci il campo di input del messaggio
+                messageInput.value = '';
+            }
+        });
+    </script>
+</body>
+</html>
