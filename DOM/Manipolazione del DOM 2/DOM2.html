@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvataggio Dati Utente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar"> 
+            <div class="input-container">
+            <label for="search-last-name">Inserisci Cognome:</label>
+            <input type="text" id="search-last-name">
+            <button id="search-btn">Cerca</button>
+        </div>
+            
+        </div>
+    </nav>
+
+    <div class="container">
+       <form id="user-form">
+
+
+                <label for="first-name">Nome:</label>
+                <input type="text" id="first-name" required>
+                <label for="last-name">Cognome:</label>
+                <input type="text" id="last-name" required>
+                <label for="age">Età:</label>
+                <input type="number" id="age" required>
+                <button type="submit">Salva</button>
+            </form>
+        <div id="info-box">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

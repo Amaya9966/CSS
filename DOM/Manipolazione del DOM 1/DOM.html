@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daily tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="todo-container">
+        <div id="todo-list-container">
+            <h2>Daily Tasks</h2>
+            <input type="text" id="task-input" placeholder="Inserisci il tuo task">
+            <button onclick="aggiungiTask()">Aggiungi</button>
+            <button id="clear-btn" onclick="eliminaLista()">Elimina Lista</button>
+
+            <ul id="todo-list"></ul>
+        </div>
+        <div id="clock"></div>
+        <div id="date"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

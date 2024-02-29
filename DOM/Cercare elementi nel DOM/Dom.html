@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio Cercare Elementi nel DOM</title>
+  </head>
+  <body>
+    <h2>Benvenuto nella mia Pagina</h2>
+    <p class="paragrafo">Questo è il primo paragrafo.</p>
+    <p class="paragrafo">Questo è il secondo paragrafo.</p>
+    <p class="paragrafo">Questo è il terzo paragrafo.</p>
+    <ul>
+      <h2>Questa è una lista</h2>
+      <li id="elemento-1">Elemento 1</li>
+      <li id="elemento-2">Elemento 2</li>
+      <li id="elemento-3">Elemento 3</li>
+    </ul>
+    <script>
+       // Cerca tutti gli elementi con classe "paragrafo" e stampa il loro testo
+       const paragrafi = document.querySelectorAll('.paragrafo');
+        paragrafi.forEach(paragrafo => {
+            console.log("Testo del paragrafo:", paragrafo.innerText);
+        });
+
+        // Cerca l'elemento con id "elemento-3" e stampa il suo testo
+        const elemento3 = document.getElementById('elemento-3');
+        console.log("Testo dell'elemento con id 'elemento-3':", elemento3.innerText);
+
+        // Cerca tutti gli elementi h2 della pagina e stampa il loro testo
+        const h2Elements = document.querySelectorAll('h2');
+        h2Elements.forEach(h2 => {
+            console.log("Testo dell'elemento h2:", h2.innerText);
+        });
+  </script>
+  </body>
+</html>

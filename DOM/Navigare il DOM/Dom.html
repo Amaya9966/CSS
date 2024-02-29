@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <script>
+        const ul = document.querySelector("ul");
+
+        // 1. L'elemento padre di ul
+        console.log("1. L'elemento padre di ul:");
+        console.log(ul.parentElement.nodeName);
+
+        // 2. Il secondo elemento figlio di ul
+        console.log("2. Il secondo elemento figlio di ul:");
+        console.log(ul.children[1].innerText);
+
+        // 3. L'elemento fratello successivo del secondo li
+        console.log("3. L'elemento fratello successivo del secondo li:");
+        console.log(ul.children[1].nextElementSibling.innerText);
+
+        // 4. L'elemento fratello precedente del secondo li
+        console.log("4. L'elemento fratello precedente del secondo li:");
+        console.log(ul.children[1].previousElementSibling.innerText);
+    </script>
+</body>
+</html>

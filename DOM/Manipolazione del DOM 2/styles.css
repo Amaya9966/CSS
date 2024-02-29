@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info form {
+    display: flex;
+    align-items: center;
+}
+
+.user-info form label {
+    margin-right: 10px;
+}
+
+.user-info form input, .user-info form button {
+    padding: 5px;
+}
+
+.search-bar label, .search-bar input, .search-bar button {
+    padding: 5px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+#infoBox {
+    display: none; /* Nasconde l'info box all'avvio */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile per il contenuto dell'info box */
+#infoBoxContent {
+    color: #333;
+}
+
+/* Stile per il pulsante di chiusura */
+#closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #999;
+}
+
+/* Effetto hover sul pulsante di chiusura */
+#closeBtn:hover {
+    color: #666;
+}

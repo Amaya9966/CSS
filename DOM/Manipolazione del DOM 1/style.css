@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('cover.jpg'); /* Sostituisci 'sfondo.jpg' con il percorso del tuo file immagine */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: orange;
+}
+
+
+#todo-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 183, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: auto; /* Impedisce che il container si estenda oltre il contenuto */
+}
+
+#todo-list li {
+    margin-bottom: 10px;
+    color: orange;
+}
+
+
+#clock, #date {
+    text-align: right;
+}
+
+#clear-btn {
+    margin-top: 20px;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.task-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: orangered;
+}
+
